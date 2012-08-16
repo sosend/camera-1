@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
 @interface BDViewController : UIViewController
-
+<UIImagePickerControllerDelegate,
+UINavigationControllerDelegate>
+{
+    UIImageView *imageView;
+    BOOL newMedia;
+}
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+- (IBAction)useCamera;
+- (IBAction)useCameraRoll;
 @end

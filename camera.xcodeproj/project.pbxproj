@@ -20,6 +20,11 @@
 		F324261F15DCC70F00E1AB71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F324260015DCC70E00E1AB71 /* Foundation.framework */; };
 		F324262715DCC70F00E1AB71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F324262515DCC70F00E1AB71 /* InfoPlist.strings */; };
 		F324262A15DCC70F00E1AB71 /* cameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F324262915DCC70F00E1AB71 /* cameraTests.m */; };
+		F324263415DCC71F00E1AB71 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F324263315DCC71F00E1AB71 /* MobileCoreServices.framework */; };
+		F324263F15DCD64400E1AB71 /* BDOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F324263E15DCD64400E1AB71 /* BDOverlayView.m */; };
+		F324264015DCD64400E1AB71 /* BDOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F324263E15DCD64400E1AB71 /* BDOverlayView.m */; };
+		F324264215DD556800E1AB71 /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = F324264115DD556800E1AB71 /* crosshair.png */; };
+		F324264315DD556800E1AB71 /* crosshair.png in Resources */ = {isa = PBXBuildFile; fileRef = F324264115DD556800E1AB71 /* crosshair.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,10 @@
 		F324262615DCC70F00E1AB71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F324262815DCC70F00E1AB71 /* cameraTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cameraTests.h; sourceTree = "<group>"; };
 		F324262915DCC70F00E1AB71 /* cameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cameraTests.m; sourceTree = "<group>"; };
+		F324263315DCC71F00E1AB71 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F324263D15DCD64400E1AB71 /* BDOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDOverlayView.h; sourceTree = "<group>"; };
+		F324263E15DCD64400E1AB71 /* BDOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDOverlayView.m; sourceTree = "<group>"; };
+		F324264115DD556800E1AB71 /* crosshair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshair.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F324263415DCC71F00E1AB71 /* MobileCoreServices.framework in Frameworks */,
 				F32425FF15DCC70E00E1AB71 /* UIKit.framework in Frameworks */,
 				F324260115DCC70E00E1AB71 /* Foundation.framework in Frameworks */,
 				F324260315DCC70E00E1AB71 /* CoreGraphics.framework in Frameworks */,
@@ -100,6 +110,7 @@
 		F32425FD15DCC70E00E1AB71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F324263315DCC71F00E1AB71 /* MobileCoreServices.framework */,
 				F32425FE15DCC70E00E1AB71 /* UIKit.framework */,
 				F324260015DCC70E00E1AB71 /* Foundation.framework */,
 				F324260215DCC70E00E1AB71 /* CoreGraphics.framework */,
@@ -113,6 +124,8 @@
 			children = (
 				F324260D15DCC70E00E1AB71 /* BDAppDelegate.h */,
 				F324260E15DCC70E00E1AB71 /* BDAppDelegate.m */,
+				F324263D15DCD64400E1AB71 /* BDOverlayView.h */,
+				F324263E15DCD64400E1AB71 /* BDOverlayView.m */,
 				F324261015DCC70F00E1AB71 /* MainStoryboard.storyboard */,
 				F324261315DCC70F00E1AB71 /* BDViewController.h */,
 				F324261415DCC70F00E1AB71 /* BDViewController.m */,
@@ -124,6 +137,7 @@
 		F324260515DCC70E00E1AB71 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F324264115DD556800E1AB71 /* crosshair.png */,
 				F324260615DCC70E00E1AB71 /* camera-Info.plist */,
 				F324260715DCC70E00E1AB71 /* InfoPlist.strings */,
 				F324260A15DCC70E00E1AB71 /* main.m */,
@@ -225,6 +239,7 @@
 			files = (
 				F324260915DCC70E00E1AB71 /* InfoPlist.strings in Resources */,
 				F324261215DCC70F00E1AB71 /* MainStoryboard.storyboard in Resources */,
+				F324264215DD556800E1AB71 /* crosshair.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F324262715DCC70F00E1AB71 /* InfoPlist.strings in Resources */,
+				F324264315DD556800E1AB71 /* crosshair.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +278,7 @@
 				F324260B15DCC70E00E1AB71 /* main.m in Sources */,
 				F324260F15DCC70E00E1AB71 /* BDAppDelegate.m in Sources */,
 				F324261515DCC70F00E1AB71 /* BDViewController.m in Sources */,
+				F324263F15DCD64400E1AB71 /* BDOverlayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F324262A15DCC70F00E1AB71 /* cameraTests.m in Sources */,
+				F324264015DCD64400E1AB71 /* BDOverlayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
