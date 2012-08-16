@@ -54,6 +54,10 @@
         imagePicker.mediaTypes = [NSArray arrayWithObjects:(NSString *) kUTTypeImage,nil];
         imagePicker.allowsEditing = NO;
         imagePicker.cameraOverlayView = Overlay;
+        imagePicker.showsCameraControls = YES;
+        imagePicker.navigationBarHidden = YES;
+        imagePicker.toolbarHidden = YES;
+        imagePicker.wantsFullScreenLayout = YES;
 
         [self presentModalViewController:imagePicker animated:YES];
         newMedia = YES;
@@ -70,11 +74,7 @@
         imagePicker.delegate = self;
         imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         imagePicker.mediaTypes = [NSArray arrayWithObjects:(NSString *) kUTTypeImage,nil];
-        imagePicker.showsCameraControls = YES;
-        imagePicker.navigationBarHidden = YES;
-        imagePicker.toolbarHidden = YES;
         imagePicker.allowsEditing = NO;
-        imagePicker.wantsFullScreenLayout = YES;
         
         
         [self presentModalViewController:imagePicker animated:YES];
